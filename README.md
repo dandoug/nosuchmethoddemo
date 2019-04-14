@@ -17,6 +17,22 @@ This will
 * run the build using `newlib` and save `lib.jar`
 * try to execute `main.jar` with `lib.jar` on the classpath
 
+This is the expected output
+
+```
+$ ./demoNoSuchMethodError.sh 
+
+Building main .jar with old library....
+
+Building new library....
+
+Trying to run main built with old lib, using new lib. Will generate NoSuchMethodError...
+
+Exception in thread "main" java.lang.NoSuchMethodError: com.ebay.demo.AppGroup.get(Ljava/lang/Object;)Ljava/lang/Object;
+	at com.ebay.demo.AppGroup.main(AppGroup.java:20)
+
+```
+
 ## Prerequisites
 
 * bash
