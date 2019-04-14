@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
 
-  <parent>
-  	<groupId>com.ebay.demo</groupId>
-  	<artifactId>nosuchmethod-parent</artifactId>
-  	<version>1.0-SNAPSHOT</version>
-  	<relativePath>..</relativePath>
-  </parent>
+	<parent>
+		<groupId>com.ebay.demo</groupId>
+		<artifactId>nosuchmethod-parent</artifactId>
+		<version>1.0-SNAPSHOT</version>
+		<relativePath>..</relativePath>
+	</parent>
 
-  <artifactId>nosuchmethod-main</artifactId>
-  
-  <profiles>
-  	<profile>
-  		<id>oldlib</id>
-		<dependencies>
-		    <dependency>
-		      <groupId>com.ebay.demo</groupId>
-	          <artifactId>nosuchmethod-oldlib</artifactId>
-		    </dependency>
-		 </dependencies>
-	</profile>
-  	<profile>
-  		<id>newlib</id>
-		<dependencies>
-		    <dependency>
-		      <groupId>com.ebay.demo</groupId>
-	          <artifactId>nosuchmethod-newlib</artifactId>
-		    </dependency>
-		 </dependencies>
-  	</profile>  
-  </profiles>
+	<artifactId>nosuchmethod-main</artifactId>
 
-  
+	<profiles>
+		<profile>
+			<id>oldlib</id>
+			<dependencies>
+				<dependency>
+					<groupId>com.ebay.demo</groupId>
+					<artifactId>nosuchmethod-oldlib</artifactId>
+				</dependency>
+			</dependencies>
+		</profile>
+		<profile>
+			<id>newlib</id>
+			<dependencies>
+				<dependency>
+					<groupId>com.ebay.demo</groupId>
+					<artifactId>nosuchmethod-newlib</artifactId>
+				</dependency>
+			</dependencies>
+		</profile>
+	</profiles>
+
 </project>

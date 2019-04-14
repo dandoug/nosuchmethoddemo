@@ -8,7 +8,7 @@ import org.junit.Test;
 public class AppGroupTest 
 {
     @Test
-    public void test()
+	public void test()
     {
     	AppGroup grp = setup();
 
