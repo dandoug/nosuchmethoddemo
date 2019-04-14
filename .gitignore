@@ -4,3 +4,5 @@
 .projet
 .classpath
 target/
+lib.jar
+main.jar

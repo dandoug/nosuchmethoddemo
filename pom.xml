@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.ebay.demo</groupId>
-  <artifactId>methodnotfound-parent</artifactId>
+  <artifactId>nosuchmethod-parent</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
@@ -19,15 +19,15 @@
   	<profile>
   		<id>oldlib</id>
 		<modules>
-		  <module>methodnotfound-main</module>
-		  <module>methodnotfound-oldLib</module>
+		  <module>nosuchmethod-main</module>
+		  <module>nosuchmethod-oldlib</module>
 		</modules>
   	</profile>
   	<profile>
   		<id>newlib</id>
 		<modules>
-		  <module>methodnotfound-main</module>
-		  <module>methodnotfound-newLib</module>
+		  <module>nosuchmethod-main</module>
+		  <module>nosuchmethod-newlib</module>
 		</modules>
   	</profile>  
   </profiles>
@@ -45,17 +45,17 @@
     <dependencies>
       <dependency>
         <groupId>com.ebay.demo</groupId>
-        <artifactId>methodnotfound-main</artifactId>
+        <artifactId>nosuchmethod-main</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
         <groupId>com.ebay.demo</groupId>
-        <artifactId>methodnotfound-oldLib</artifactId>
+        <artifactId>nosuchmethod-oldlib</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
         <groupId>com.ebay.demo</groupId>
-        <artifactId>methodnotfound-newLib</artifactId>
+        <artifactId>nosuchmethod-newlib</artifactId>
         <version>${project.version}</version>
       </dependency>
     </dependencies>

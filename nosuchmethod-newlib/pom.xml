@@ -6,12 +6,12 @@
 
   <parent>
   	<groupId>com.ebay.demo</groupId>
-  	<artifactId>methodnotfound-parent</artifactId>
+  	<artifactId>nosuchmethod-parent</artifactId>
   	<version>1.0-SNAPSHOT</version>
   	<relativePath>..</relativePath>
   </parent>
 
-  <artifactId>methodnotfound-oldLib</artifactId>
+  <artifactId>nosuchmethod-newlib</artifactId>
   
 
   
