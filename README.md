@@ -6,7 +6,9 @@ It's somewhat vexing because at a source level, the code will work no matter whe
 
 The `get` method is defined in a super class of `AppGroup` no matter which version is run.  The specific issue is that the compiled bytecodes will create an `invokespecial` instruction that references a specific class and method name for the `get` invocation.  If the `old` and `new` libs are mixed, then the specific reference refers to a class that is not in the calling classes parent hierarchy or to a method that does not existing in the specifically referenced class.  This genenerates the **NoSuchMethodError**.
 
-To reproduce it, run  
+To read more details about method dispatch in a JVM, refer to [this excelent article](https://www.lohika.com/methods-invocation-inside-of-a-java-virtual-machine/) by [Alexander Dukhno](https://www.linkedin.com/in/alex-dukhno-41181723/).
+
+To reproduce an example of **NoSuchMethodError** , run this script from this repo after cloning 
 ```
   ./demoNoSuchMethodError.sh
 ```
